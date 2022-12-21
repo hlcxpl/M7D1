@@ -17,7 +17,7 @@ const registrar = (nombre, edad, animal, color, enfermedad) => {
 const leer = () => {
     const fs = require('fs')
     const citas = fs.readFileSync('./citas.json', 'utf8')
-    const data = JSON.stringify(citas)
+    const data = JSON.parse(citas)
     console.log(data)
 }
 
